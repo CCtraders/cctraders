@@ -93,7 +93,7 @@ body {
     margin-top: -10%;
     display: inline-block;
     padding: 15px 30px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
@@ -500,12 +500,12 @@ a:link,a:active,a:visited,a:hover{
     position: fixed;
     bottom: 10%;
     right: 2%;
-    background-color: #25d366; /* WhatsApp green color */
+    background-color: #008cff; /* WhatsApp green color */
     color: #fff;
-    padding: 15px;
+    padding: 20px;
     border-radius: 50%;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
