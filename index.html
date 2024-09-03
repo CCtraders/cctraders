@@ -19,7 +19,7 @@
     
 
         <center>
-    <a href="https://t.me/Crypto_Classics31" class="enroll-button">
+    <a href="#"  onclick="joinTelegram()" class="enroll-button">
         Join Now our Telegram Group for Future Trading.
         <span class="price">Crypto Classics</span>
     </a>
@@ -116,12 +116,12 @@
  
   
            
-          <center>
-            <a href="https://t.me/Crypto_Classics31" class="enroll-button">
-                Join Now our Telegram Group for Future Trading.
-                <span class="price">Crypto Classics</span>
-            </a>
-                </center><br>
+              <center>
+    <a href="#"  onclick="joinTelegram()" class="enroll-button">
+        Join Now our Telegram Group for Future Trading.
+        <span class="price">Crypto Classics</span>
+    </a>
+        </center><br>
                
                 <center><p class="sub_heading_3">What You Will Get in Our VIP Group</p></center>
                 <center><p class="first_line">What Will You Get in CRYPTO CLASSICS VIP?</p></center>
@@ -197,6 +197,28 @@
 
 
                 <script>
+                 function joinTelegram() {
+                    var telegramUrl = 'https://t.me/+mTel53ULu2UwZWQ0';
+                    var telegramAppUrl = 'tg://resolve?domain=mTel53ULu2UwZWQ0'; // Telegram deep link
+                    var appStoreUrl = 'https://apps.apple.com/us/app/telegram-messenger/id686449807'; // App Store link
+                    var playStoreUrl = 'https://play.google.com/store/apps/details?id=org.telegram.messenger'; // Play Store link
+
+                        // Open Telegram app directly
+                        window.location.href = telegramAppUrl;
+                
+                        // Fallback if Telegram is not installed
+                        setTimeout(function () {
+                            // Redirect to App Store or Play Store if the app is not installed
+                            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+                            if (/android/i.test(userAgent)) {
+                                window.location.href = playStoreUrl;
+                            } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                                window.location.href = appStoreUrl;
+                            } else {
+                                window.location.href = telegramUrl;
+                            }
+                        }, 500);
+                    }
                   function openTelegram() {
                     window.open('https://t.me/Crypto_Classics31', '_blank');
                 }
